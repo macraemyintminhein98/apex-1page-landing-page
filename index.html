@@ -3,65 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Service - Apex</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Your Awesome Landing Page</title>
     <style>
-        .gradient-bg { background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); }
+        body { font-family: sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+        .container { max-width: 960px; margin: 40px auto; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; }
+        h1 { color: #007bff; margin-bottom: 20px; }
+        p { line-height: 1.6; margin-bottom: 20px; }
+        .cta-button { display: inline-block; background-color: #28a745; color: white; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: background-color 0.3s ease; }
+        .cta-button:hover { background-color: #218838; }
+        .features { display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 30px; }
+        .feature-item { flex-basis: 30%; margin: 10px; padding: 15px; border: 1px solid #eee; border-radius: 5px; background-color: #fafafa; }
+        footer { margin-top: 50px; padding: 20px; background-color: #333; color: white; font-size: 0.9em; }
+        @media (max-width: 768px) { .container { margin: 20px; padding: 15px; } .features { flex-direction: column; } .feature-item { flex-basis: 90%; } }
     </style>
 </head>
-<body class="font-sans antialiased bg-gray-50 text-gray-800">
-    <header class="gradient-bg text-white py-4 shadow-lg">
-        <div class="container mx-auto px-4 text-center">
-            <h1 class="text-4xl font-bold mb-2">Apex Landing Pages</h1>
-            <p class="text-xl">Your online presence, simplified.</p>
-        </div>
-    </header>
-
-    <main class="container mx-auto px-4 py-12">
-        <section class="text-center mb-12">
-            <h2 class="text-3xl font-semibold mb-4">Professional 1-Page Landing Pages</h2>
-            <p class="text-lg max-w-2xl mx-auto text-gray-700 leading-relaxed">
-                Launch your product, service, or portfolio swiftly with a custom-designed, responsive, 1-page landing page.
-                Crafted with HTML, CSS, and JS, deployed effortlessly on Vercel.
-            </p>
-        </section>
-
-        <section class="grid md:grid-cols-2 gap-8 mb-12">
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-2xl font-bold mb-3">What You Get:</h3>
-                <ul class="list-disc list-inside text-gray-700 space-y-2">
-                    <li>Custom 1-page design</li>
-                    <li>Responsive for all devices</li>
-                    <li>HTML, CSS, JS codebase</li>
-                    <li>Text, image & brand color customization</li>
-                    <li>Vercel deployment setup</li>
-                    <li>GitHub code snippet</li>
-                </ul>
+<body>
+    <div class="container">
+        <h1>Welcome to Your New Product/Service!</h1>
+        <p>This is a professionally designed, responsive one-page landing page created just for you. Get your message across clearly and effectively to your audience.</p>
+        <a href="#contact" class="cta-button">Learn More & Get Started!</a>
+        
+        <div class="features">
+            <div class="feature-item">
+                <h3>Fast & Responsive</h3>
+                <p>Looks great on any device, from desktop to mobile.</p>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-2xl font-bold mb-3">Perfect For:</h3>
-                <ul class="list-disc list-inside text-gray-700 space-y-2">
-                    <li>Startups & Solopreneurs</li>
-                    <li>New product/service launches</li>
-                    <li>Freelancer portfolios</li>
-                    <li>Quick online presence</li>
-                    <li>Lead capture pages</li>
-                </ul>
+            <div class="feature-item">
+                <h3>Custom Branding</h3>
+                <p>Your colors, your text, your images – perfectly tailored.</p>
             </div>
-        </section>
-
-        <section class="text-center bg-blue-50 p-8 rounded-lg shadow-inner">
-            <h2 class="text-3xl font-semibold mb-4 text-blue-800">Ready to Launch?</h2>
-            <p class="text-2xl font-bold text-gray-900 mb-6">Only $49.99</p>
-            <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">Get Your Landing Page</a>
-        </section>
-    </main>
-
-    <footer id="contact" class="bg-gray-800 text-white py-8 mt-12">
-        <div class="container mx-auto px-4 text-center">
-            <p>&copy; 2024 Apex Landing Pages. All rights reserved.</p>
-            <p class="mt-2">Contact: <a href="mailto:info@apex.com" class="text-blue-400 hover:underline">info@apex.com</a></p>
+            <div class="feature-item">
+                <h3>Vercel Hosted</h3>
+                <p>Blazing fast, reliable, and easy to scale hosting.</p>
+            </div>
         </div>
+
+        <section id="contact" style="margin-top: 50px;">
+            <h2>Ready to Launch?</h2>
+            <p>Contact us today to get your own stunning landing page up and running!</p>
+            <a href="mailto:info@example.com" class="cta-button">Get a Free Quote</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
     </footer>
 </body>
 </html>
