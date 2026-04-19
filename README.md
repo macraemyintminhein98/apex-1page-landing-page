@@ -1,2 +1,1 @@
-# apex-1page-landing-page
-A professionally designed, responsive, one-page landing page (e.g., for a new product, service, or p
+Apex Landing Pages offers professional, responsive, one-page landing page design and deployment for your product, service, or personal portfolio. Built with HTML/CSS/JS and hosted on Vercel, this service provides a quick and effective online presence. Ideal for startups, freelancers, and small businesses. Price: $49.99
