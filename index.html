@@ -4,49 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Awesome Landing Page</title>
-    <style>
-        body { font-family: sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
-        .container { max-width: 960px; margin: 40px auto; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; }
-        h1 { color: #007bff; margin-bottom: 20px; }
-        p { line-height: 1.6; margin-bottom: 20px; }
-        .cta-button { display: inline-block; background-color: #28a745; color: white; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: background-color 0.3s ease; }
-        .cta-button:hover { background-color: #218838; }
-        .features { display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 30px; }
-        .feature-item { flex-basis: 30%; margin: 10px; padding: 15px; border: 1px solid #eee; border-radius: 5px; background-color: #fafafa; }
-        footer { margin-top: 50px; padding: 20px; background-color: #333; color: white; font-size: 0.9em; }
-        @media (max-width: 768px) { .container { margin: 20px; padding: 15px; } .features { flex-direction: column; } .feature-item { flex-basis: 90%; } }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to Your New Product/Service!</h1>
-        <p>This is a professionally designed, responsive one-page landing page created just for you. Get your message across clearly and effectively to your audience.</p>
-        <a href="#contact" class="cta-button">Learn More & Get Started!</a>
-        
-        <div class="features">
-            <div class="feature-item">
-                <h3>Fast & Responsive</h3>
-                <p>Looks great on any device, from desktop to mobile.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Custom Branding</h3>
-                <p>Your colors, your text, your images – perfectly tailored.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Vercel Hosted</h3>
-                <p>Blazing fast, reliable, and easy to scale hosting.</p>
+    <header>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <h1>Launch Your <span class="highlight">Amazing Idea</span> with Us!</h1>
+            <p>Get a stunning, responsive one-page landing page designed and deployed in no time.</p>
+            <button onclick="location.href='#contact'">Get Started Today</button>
+        </div>
+    </section>
+
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2>What We Offer</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Custom Design</h3>
+                    <p>Tailored to your brand and vision.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Responsive</h3>
+                    <p>Looks great on any device.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Fast Deployment</h3>
+                    <p>Live on Vercel, blazing fast.</p>
+                </div>
             </div>
         </div>
+    </section>
 
-        <section id="contact" style="margin-top: 50px;">
+    <section id="contact" class="contact-section">
+        <div class="container">
             <h2>Ready to Launch?</h2>
-            <p>Contact us today to get your own stunning landing page up and running!</p>
-            <a href="mailto:info@example.com" class="cta-button">Get a Free Quote</a>
-        </section>
-    </div>
+            <p>Contact us to discuss your project.</p>
+            <a href="mailto:hello@example.com" class="cta-button">Email Us</a>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2023 Your Company. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 APEX Landing Pages. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
